@@ -49,7 +49,7 @@ nav ul li a {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('images/pexels-cottonbro-6896179.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,10 +189,11 @@ footer {
 }
 
 /* Media Queries */ 
-@media (max-width: 768px) { 
-    .why-us-grid, .blogs-grid { flex-direction: column; 
-                              }
-
+@media (max-width: 768px) { .why-us-grid, .blogs-grid 
+{ 
+flex-direction: column; 
+}
+                          }
 css
 
 .hero-content h2 {

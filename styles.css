@@ -1,120 +1,179 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
     color: #333;
 }
 
 .container {
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
+/* Header */
 header {
-    background-color: #fff;
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
-    border-bottom: 1px solid #e2e2e2;
-    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 50px;
-    margin-bottom: 10px;
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    list-style: none;
+    float: right;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid #000;
+    color: #f39c12;
 }
 
-.featured {
-    margin: 30px 0;
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.featured img {
-    width: 100%;
-    height: auto;
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
 }
 
-.featured h2 {
-    margin-top: 10px;
-    font-size: 24px;
-    text-transform: uppercase;
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
     font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
 }
 
-.posts {
-    margin: 30px 0;
+.btn:hover {
+    background-color: #e67e22;
 }
 
-.post-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.post {
+/* Blogs Section */
+.blogs-section {
+    padding: 80px 0;
     background-color: #fff;
-    padding: 20px;
-    border: 1px solid #e2e2e2;
-    border-radius: 5px;
-    text-align: center;
 }
 
-.post img {
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-img {
     width: 100%;
-    height: auto;
-    border-bottom: 1px solid #e2e2e2;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
-.post h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.post p {
-    font-size: 14px;
-    color: #666;
+.blog-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .read-more {
-    color: #3498db;
     text-decoration: none;
-    font-weight: bold;
+    color: #f39c12;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .read-more:hover {
-    text-decoration: underline;
+    color: #e67e22;
 }
 
+/* Footer */
 footer {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    margin-top: 30px;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }

@@ -4,69 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LetsBlog - Home</title>
+    <title>TopReviews - Trending Product Reviews</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>LetsBlog</h1>
+            <h1 class="logo">TopReviews</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Single Posts</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Category</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <li><a href="#">Features</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="featured">
-            <div class="container">
-                <img src="featured-image.jpg" alt="Top 10 Ingredients">
-                <h2>Top 10 Ingredients</h2>
-            </div>
-        </section>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Discover Trending Product Reviews</h2>
+            <p>Your ultimate guide to the latest and greatest products.</p>
+            <a href="#blogs" class="btn">Explore Blogs</a>
+        </div>
+    </section>
 
-        <section class="posts">
-            <div class="container">
-                <div class="post-grid">
-                    <article class="post">
-                        <img src="post1.jpg" alt="Beauty of Nature">
-                        <h3>Beauty of Nature</h3>
-                        <p>July 22, 2015</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <section id="blogs" class="blogs-section">
+        <div class="container">
+            <h2 class="section-title">Latest Blogs</h2>
+            <div class="blogs-grid">
+                <!-- Blog Card 1 -->
+                <div class="blog-card">
+                    <img src="blog1.jpg" alt="Blog 1" class="blog-img">
+                    <div class="blog-content">
+                        <h3>Review: Best Wireless Earbuds of 2024</h3>
+                        <p>Discover the top wireless earbuds that offer the best sound quality...</p>
                         <a href="#" class="read-more">Read More</a>
-                    </article>
-
-                    <article class="post">
-                        <img src="post2.jpg" alt="Fashion Model Shoot">
-                        <h3>Fashion Model Shoot</h3>
-                        <p>July 22, 2015</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </article>
-
-                    <article class="post">
-                        <img src="post3.jpg" alt="Golden Snow Land">
-                        <h3>Golden Snow Land</h3>
-                        <p>July 22, 2015</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </article>
+                    </div>
                 </div>
+                <!-- Blog Card 2 -->
+                <div class="blog-card">
+                    <img src="blog2.jpg" alt="Blog 2" class="blog-img">
+                    <div class="blog-content">
+                        <h3>Top 5 Smartphones for Budget Buyers</h3>
+                        <p>Looking for a new phone without breaking the bank? Here are the top 5...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- Add more blog cards as needed -->
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 LetsBlog. All rights reserved.</p>
+            <p>© 2024 TopReviews. All rights reserved.</p>
         </div>
     </footer>
 </body>

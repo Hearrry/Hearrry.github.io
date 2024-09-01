@@ -67,6 +67,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     height: 100vh;
+    background-size: cover;
     background: url('images/pexels-cottonbro-6896179.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
